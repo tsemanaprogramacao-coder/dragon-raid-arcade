@@ -51,4 +51,5 @@ jobs:
         uses: actions/deploy-pages@v5
 
       - name: Show deployment URL
-        run: echo "GitHub Pages URL: ${{ steps.deployment.outputs.page_url }}"
+        run: |
+          echo "GitHub Pages URL: ${{ steps.deployment.outputs.page_url }}"
