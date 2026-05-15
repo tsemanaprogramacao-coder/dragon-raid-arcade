@@ -25,6 +25,11 @@ jobs:
         with:
           node-version: 24
 
+      - name: Verify Node and npm are available
+        run: |
+          echo "Node version: $(node -v)"
+          echo "npm version: $(npm -v)"
+
       - name: Install dependencies
         run: npm install
 
